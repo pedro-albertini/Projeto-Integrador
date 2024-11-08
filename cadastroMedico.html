@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="assets/cadastroMedico.css">
+</head>
+
+<body onload="dados()">
+    <div class="main">
+        <div class="esq">
+            <section class="sectionCadastroMedico">
+                <p>Falta pouco!</p><br>
+                <p>Só no Saude++ você tem a integração completa dos sistemas de saúde</p>
+            </section>
+        </div>
+        <div class="dir">
+            <div class="container-cadastromedico">
+                <img src="assets/img/logo-saúde++.svg" alt="logoAzul" class="img">
+                <div class="container-tabela-cadastromedico">
+                    <div class="cadastromedico">
+                        <div class="cadastromedico-conteudo">
+                            <div class="input-group-cadastromedico">
+                                <div class="input-box-cadastromedico">
+                                    <label>CPF</label>
+                                    <input type="text" id="cpf" placeholder="Digite um CPF" required>
+                                </div>
+
+                                <div class="input-box-cadastromedico">
+                                    <label>Senha</label> <!-- temos que usar uma validação em js aqui -->
+                                    <input type="password" id="senha" placeholder="Digite uma senha" required>
+                                </div>
+
+                                <div class="requisitos">
+                                    <p>- A senha deve ter pelo menos 8 caracteres.</p><br>
+                                    <p>- Deve incluir letras maiúsculas e minúsculas.</p><br>
+                                    <p>- Deve conter números</p><br>
+                                    <p>- Deve ter pelo menos um caractere especial (por exemplo, !, @, #, $).</p>
+                                </div>
+
+                                <div class="botao-cadastromedico">
+                                    <button><a href="homeGerente.html" onclick="cadastrar()">Finalizar</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

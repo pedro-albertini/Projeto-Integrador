@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/loginMedico.css">
+    <script src="app.js"></script>
+</head>
+
+<body onload="dados()">
+    <div class="main">
+        <div class="esq">
+                <section class="sectionLogin">
+                    <p>Faça seu login!</p>
+                </section>
+        </div>
+        <div class="dir">
+            <div class="container-login">
+                <img src="assets/img/logo-saúde++.svg" alt="logoAzul" class="img">
+                <div class="container-tabela-login">
+                    <div class="login">
+                        <div class="login-conteudo">
+                            <div class="input-group-login">
+                                <div class="input-box-login">
+                                    <label>CPF</label>
+                                    <input type="text" id="cpf" placeholder="Digite o seu CPF" required>
+                                </div>
+
+                                <div class="input-box-login">
+                                    <label>Senha</label>
+                                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                                </div>
+
+                                <div class="botao-login">
+                                    <button><a href="homeMedico.html" onclick="loginMedico()">Entrar no sistema</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>

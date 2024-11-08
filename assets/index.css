@@ -1,0 +1,236 @@
+/* Aplicar a fonte Poppins a todo o corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none ;
+}
+
+a:hover {
+    color: #38B6FF;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn {
+    border: 2px solid #38B6FF;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover {
+    background-color: #38B6FF;
+    color: #000000;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+}
+
+span {
+    color: #38B6FF;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+}
+
+img {
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: #38B6FF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+/* Estilos para a seção de introdução */
+.intro {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #04471C;
+    margin-bottom: 10px;
+}
+
+.intro h3 {
+    font-size: 1.5em;
+    color: #2068AC;
+    margin-bottom: 30px;
+}
+
+/* Estilos para a seção de Serviços */
+.services {
+    padding: 50px 20px;
+    background-color: whitesmoke;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 5rem;
+    color: #04471C;
+}
+
+.services .service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Adiciona espaçamento entre as caixas */
+}
+
+.service {
+    flex: 1 1 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1CA600;
+}
+
+.service p {
+    font-size: 1em;
+    color: black;
+}
+
+/* Estilos para o formulário de contato */
+.contact-form {
+    padding: 50px 0;
+    background-color: whitesmoke;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.contact-form button {
+    display: block;
+    width: 39rem;
+    padding: 10px;
+    background-color: #38B6FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1da9fa;
+}
+
+/* Estilos adicionais */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

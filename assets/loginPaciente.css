@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.sectionLogin{
+    font-size: 35pt;
+    color: white;
+}
+
+.sectionLogin2{
+    font-size: 20pt;
+    color: white;
+}
+
+.main {
+    display: flex;
+}
+
+.dir {
+    width: 70%;
+    display: flex;
+}
+
+.esq {
+    width: 30%;
+    height:100vh;
+    max-height: 100rem;
+    background-color: #38B6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.botaoEsq{
+    background-color: #ffffff;
+    width: 50%;
+    margin-top: 2.5rem;
+    border: none;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20pt;
+    transition: 0.5s;
+}
+
+.botaoEsq:hover{
+    background-color:  #d9d9d9;
+   
+}
+
+.img {
+    width: 500px;
+}
+
+.container-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 55px;
+    width: 700px;
+    padding-left: 50px;
+}
+
+.container-tabela-login {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.77);
+}
+
+.login {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.input-group-login {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.input-box-login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box-login input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box-login input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box-login input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box-login label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box-login input::placeholder {
+    color: #000000be;
+}
+
+.botao-login button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #38B6FF;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-login button:hover {
+    background-color: #1da9fa;
+}
+
+.botao-login button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container-login {
+        margin-left: 150px;
+        width: 60%;
+        height: auto;
+    }
+
+    .img {
+        width: 200px;
+    }
+}

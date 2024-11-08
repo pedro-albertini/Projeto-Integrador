@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/loginGerente.css">
+    <script src="app.js"></script>
+</head>
+
+<body onload="dados()">
+    <div class="main">
+        <div class="esq">
+            <section class="sectionLogin">
+                <p>Faça seu login!</p>
+            </section>
+        </div>
+        <div class="dir">
+            <div class="container-login">
+                <img src="assets/img/logo-saúde++.svg" alt="logo" class="img">
+                <div class="container-tabela-login">
+                    <div class="login">
+                        <div class="login-conteudo">
+                            <div class="input-group-login">
+                                <div class="input-box-login">
+                                    <label>CPF</label>
+                                    <input type="text" placeholder="Digite o seu CPF" id="cpf" required maxlength="11">
+                                </div>
+
+                                <div class="input-box-login">
+                                    <label>Senha</label>
+                                    <input type="password" placeholder="Repita a mesma senha" id="senha" required>
+                                </div>
+
+                                <div class="botao-login">
+                                    <button><a href="homeGerente.html" onclick="login()">Entrar no sistema</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
