@@ -1,236 +1,279 @@
-/* Aplicar a fonte Poppins a todo o corpo */
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ 
+.container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
-    text-align: center;
+    padding: 20px 0;
 }
-
-/* Estilos para o cabeçalho */
+ 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    width: 100vw;
+    position: fixed;
 }
 
-#title {
-    flex-direction: column;
-    line-height: 10px;
+img{
+    padding-right: 15vh;
 }
 
-li {
-    display: inline-block;
-    margin: 20px;
-}
-
-a {
-    color: #000000;
-    text-decoration: none ;
-}
-
-a:hover {
-    color: #38B6FF;
-    transition: 0.3s all;
-}
-
-#inscreva-se-btn {
-    border: 2px solid #38B6FF;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#inscreva-se-btn:hover {
-    background-color: #38B6FF;
-    color: #000000;
-}
-
-h1 {
-    font-weight: 200;
-}
-
-h2 {
-    font-size: 56px;
-    line-height: 10px;
-}
-
-span {
-    color: #38B6FF;
-}
-
-p {
-    line-height: 20px;
-    max-width: 500px;
-}
-
-img {
-    width: 300px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-form [type="submit"] {
-    height: 50px;
-    width: 50%;
-    background-color: #38B6FF;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-form [type="submit"]:hover {
+img:hover{
     cursor: pointer;
 }
-
-input {
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-}
-
-/* Estilos para a seção de introdução */
-.intro {
-    padding: 50px 0;
-    background-color: #FFFFFF;
-    text-align: center;
-}
-
-.intro h1 {
-    font-size: 2.5em;
-    color: #04471C;
-    margin-bottom: 10px;
-}
-
-.intro h3 {
-    font-size: 1.5em;
-    color: #2068AC;
-    margin-bottom: 30px;
-}
-
-/* Estilos para a seção de Serviços */
-.services {
-    padding: 50px 20px;
-    background-color: whitesmoke;
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.services h2 {
-    font-size: 2em;
-    margin-bottom: 5rem;
-    color: #04471C;
-}
-
-.services .service-container {
+.hero {
+    background: linear-gradient(to right, #008f9c, #00b4db);
+    color: #fff;
+    padding: 80px 20px;
+    height: 90vh;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px; /* Adiciona espaçamento entre as caixas */
+    align-items: center;
+}
+.hero {
+    background: linear-gradient(to right, #008f9c, #00b4db);
+    color: #fff;
+    padding: 80px 0; /* Remove o padding lateral */
+    height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
-.service {
-    flex: 1 1 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+.hero-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura */
+    padding: 0 2rem; /* Adiciona espaçamento interno lateral */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
 }
 
-.service img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+.hero-text {
+    max-width: 50%; /* Limita a largura do texto */
 }
 
-.service h3 {
-    font-size: 1.5em;
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.hero-text .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background-color: #0056b3;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem; /* Aumenta o espaço entre a imagem e o texto */
+    flex-wrap: nowrap;
+}
+
+.hero-content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem preencha e corte o excesso se necessário */
+    display: block;
+    border: none; /* Remover a borda da imagem se preferir, já que o contêiner tem borda */
+}
+
+.hero-content-img {
+    width: 100%;
+    max-width: 600px; /* ou ajuste conforme desejado */
+    height: 100%;
+    max-height: 400px; /* ou ajuste conforme desejado */
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    max-width: 50%; /* Limita a largura do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 35px;
+}
+.header-container img {
+    width: 250px; 
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #008f9c; 
+    font-weight: 500;
+    
+}
+nav a:hover {
+    color: #a8e000; 
+}
+
+.a:hover {
+    color: #a8e000;
+}
+ 
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #008f9c; 
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+
+
+.btn:hover {
+    background: #006b75;
+}
+ 
+
+.hero {
+    background: linear-gradient(to right, #008f9c, #00b4db);
+    color: #fff;
+    padding: 80px 20px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
-    color: #1CA600;
 }
 
-.service p {
-    font-size: 1em;
-    color: black;
-}
-
-/* Estilos para o formulário de contato */
-.contact-form {
-    padding: 50px 0;
-    background-color: whitesmoke;
-    text-align: center;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.contact-form h2 {
-    font-size: 2em;
+.hero p {
+    font-size: 1.2em;
     margin-bottom: 20px;
-    color: #000000;
+}
+ 
+
+.servicos {
+    background: #fff;
+    padding: 60px 20px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.servico-grid {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    box-shadow: black (0,0,0,5);
+}
+.servico {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: solid black 1px;
+    border-radius: 30px;
+    transition: 0.5s;
 }
 
-.contact-form form {
+.servico:hover{
+    font-size: 15pt;
+    cursor: pointer;        
+}
+
+.servico h3 {
+    color: #008f9c; 
+}
+ 
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     max-width: 600px;
     margin: 0 auto;
-    text-align: left;
 }
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+footer input, footer textarea {
     color: #000000;
-}
-
-.contact-form input,
-.contact-form textarea {
+    font-size: 16px;
+    font-weight: 500;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    color: #000000;
+    height: 52px;
+    letter-spacing: 0.03rem;
+    border: 3px solid white;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+    padding: 0 25px;
 }
-
-.contact-form button {
-    display: block;
-    width: 39rem;
-    padding: 10px;
-    background-color: #38B6FF;
-    color: #FFFFFF;
+footer input:focus, footer textarea:focus{
+    border-color:  #008f9c;
+}
+footer button {
+    width: 655px;
+    margin-top: 30px;
+    background: #6b43ff;
+    color: #fff;
     border: none;
-    border-radius: 10px;
-    font-size: 1em;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 0.025em;
     cursor: pointer;
+    font-weight: 800;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
-
-.contact-form button:hover {
-    background-color: #1da9fa;
+footer button:hover {
+    background: #006b75;
 }
-
-/* Estilos adicionais */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+input, textarea {
+    color: #000; /* Define uma cor de texto visível */
+    background-color: #fff; /* Garante que o fundo seja branco */
+    border: 1px solid #ccc; /* Adiciona uma borda visível */
+    padding: 10px; /* Adiciona espaçamento interno */
+    font-size: 16px; /* Define um tamanho de fonte legível */
 }

@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="assets/index.css" rel="stylesheet">
-    <title>Landing Page</title>
+    <title>Saúde ++</title>
 </head>
+
 <body>
     <header>
-        <div class="header-container">
-            <img src="assets/img/logoazul-saúde++.svg" alt="Logo Azul Saúde">
+        <div class="container header-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <img src="assets/img/logonova.png" alt="Logo Saúde ++" >
+
+            <section class="a">
+             <a href="escolha.html" class="btn a">Entrar</a>
+            </section> 
+                
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
-                <li><a href="loginMedico.html">Médico</a></li>
-                <li><a href="loginGerente.html">Gestor</a></li>
-                <li><a href="loginPaciente.html" id="inscreva-se-btn">Já tem uma conta?</a></li>
-            </ul>
-        </nav>
     </header>
+ 
+
     <main>
-        <section class="intro">
-            <h1>Seja Bem-vindo ao Futuro da Saúde!</h1>
-            <h3>Bem vindo ao serviço de integração do sistema público e privado de saúde!</h3>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-content-img">
+                    <img src="assets/img/imagemindex.png" alt="Imagem ilustrativa sobre saúde digital" >
+                </div>
+                
+                <div class="hero-text">
+                    <h1>O Futuro da Saúde é Agora</h1>
+                    <p>Conectamos você ao melhor do sistema de saúde com praticidade e segurança.</p>
+                    <p>Com a digitalização do histórico médico por meio do nosso software, promovemos a integração entre os sistemas de saúde públicos e privados, garantindo mais segurança, tecnologia e eficiência no acesso e na gestão das informações de saúde.</p>
+                    <a href="#contato" class="btn">Fale Conosco</a>
+                </div>
+            </div>
         </section>
-        <section class="services">
-            <h2>Nossos Serviços</h2>
-            <div class="service-container">
-                <div class="service">
-                    <h3>Prontuário Online</h3>
-                    <p>Receba seu prontuário assim que sair de sua consulta.<p>
-                </div>
-                <div class="service">
-                    <h3>Exames</h3>
-                    <p>Após realizar seus exames, ele estará disponível em nossa plataforma com rapidez e segurança.</p>
-                </div>
-                <div class="service">
-                    <h3>Atualização em menos de 24h</h3>
-                    <p>Seu exame estará disponível em menos de 24 horas após a sua consulta.</p>
+
+        <section class="servicos" id="servicos">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="servico-grid">
+                    <div class="servico">
+                        <h3>Prontuário Online</h3>
+                        <p>Receba seu prontuário assim que sair de sua consulta.</p>
+                    </div>
+                    <div class="servico">
+                        <h3>Exames Rápidos</h3>
+                        <p>Resultados disponíveis em menos de 24h.</p>
+                    </div>
+                    <div class="servico">
+                        <h3>Atendimento Integrado</h3>
+                        <p>Facilitamos a comunicação entre médicos e pacientes.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <section class="contact-form">
-            <h2>Contato</h2>
-            <form action="#" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensagem:</label>
-                <input type="message" id="message" name="mensagem" required>
-                <button type="submit">Enviar</button>
+
+    <footer id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
             </form>
-        </section>
-        <p>&copy; 2024 Saúde ++. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Saúde ++. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
+
 </html>
