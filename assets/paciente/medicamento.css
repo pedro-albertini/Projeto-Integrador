@@ -7,6 +7,7 @@
     font-family: 'Mulish', sans-serif;
 }
 
+
 h1 {
     text-align: center;
 }
@@ -103,10 +104,18 @@ h1 {
 .medicamento li .deletarMed{
     margin-left: 5px;
 }
-@media screen and (max-width: 768px) {
-    .container-medicamento {
-        margin-left: 150px;
-        width: 60%;
-        height: auto;
+
+@media (max-width: 767px) {    
+    .container-medicamento{
+        width: 100vw;
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
+    .medicamento {    
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
 }

@@ -121,22 +121,18 @@ h1 {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-    .container-prontuario {
-        margin-left: 150px;
-        width: 60%;
-        height: auto;
+
+@media(max-width:768px){
+    .container-prontuario{
+        width: 100vw;
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .gender-inputs-prontuario {
-        margin-top: 2rem;
+    .container-tabela-prontuario{
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
-    .gender-group-prontuario {
-        flex-direction: column;
-    }
-    .gender-title-prontuario h6 {
-        margin: 0;
-    }
-    .gender-input-prontuario {
-        margin-top: 0.5rem;
-    }
+  
+    
 }

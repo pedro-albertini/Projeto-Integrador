@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
+
 h1 {
     text-align: center;
 }
@@ -28,7 +29,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     background-color: whitesmoke;
     padding: 2px 0;
     border-radius: 20px;
@@ -72,7 +72,7 @@ h1 {
 
 .container-consulta table tr td .botao-consultas {
     font-size: 14px;
-    max-width: 90px;
+    width: 90px;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -90,16 +90,30 @@ h1 {
     background-color: #dbdef6;
 }
 
+
 .data-consultas {
     text-align: center;
 }
+
 @media (max-width: 768px){
     .container-consultas{
-        margin-left: 140px;
-        margin-top: 90px;
+        width: 100vw;
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container-consulta{
-        width: 350px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    
+    .container-consulta table tr td.icone {
+        display: none;
+    }
+    
+    .container-consulta table tr td .botao-consultas {
+        width: 70px;
     }
     
 }

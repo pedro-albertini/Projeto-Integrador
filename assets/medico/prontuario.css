@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
+
 h1 {
     text-align: center;
 }
@@ -63,40 +64,8 @@ h1 {
     background-color: #eeeeee75;
 }
 
-.input-box-prontuario input:focus-visible {
-    outline: 1px solid #04471C;
-}
-
-.input-box-prontuario label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.input-box-prontuario input::placeholder {
-    color: #000000be;
-}
-.inputzao-box-prontuario {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.1rem;
-}
-
-.inputzao-box-prontuario input {
-    margin: 0.6rem 0;
-    padding: 9.8rem 9.8rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-}
-
-.inputzao-box-prontuario input:hover {
-    background-color: #eeeeee75;
-}
-
 .inputzao-box-prontuario input:focus-visible {
-    outline: 1px solid #04471C;
+    outline: 1px solid #009e8c;
 }
 
 .inputzao-box-prontuario label {
@@ -128,4 +97,19 @@ h1 {
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
+}
+
+@media(max-width: 768px){
+  
+    .container-prontuario{
+        width: 100vw;
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-tabela-prontuario{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
 }

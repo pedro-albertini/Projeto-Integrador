@@ -7,6 +7,7 @@
     font-family: 'Mulish', sans-serif;
 }
 
+
 h1 {
     text-align: center;
 }
@@ -14,6 +15,7 @@ h1 {
 .container-body {
     display: flex;
 }
+
 .container-vacinas{
     width: 100%;
     margin-top: 5vw;
@@ -21,7 +23,7 @@ h1 {
     margin-right: 10rem;
 }
 .container-vacina{
-    margin-top: 90px;
+    margin-top: 90px;   
     margin-bottom: 90px;
     color: #000;
     display: flex;
@@ -35,7 +37,6 @@ h1 {
 
 .container-vacina table {
     width: 100%;
-    max-width: 800px;
     border-collapse: collapse;
 }
 
@@ -71,7 +72,7 @@ h1 {
 
 .container-vacina table tr td .botao-vacinas {
     font-size: 14px;
-    max-width: 90px;
+    width: 90px;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -92,13 +93,30 @@ h1 {
 .data-vacinas {
     text-align: center;
 }
+
 @media (max-width: 768px){
     .container-vacinas{
-        margin-left: 140px;
-        margin-top: 90px;
+        width: 100vw;
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container-vacina{
-        width: 350px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .container-vacina table tr th {
+        height: 56px;
+        font-size: 20px;
+    }
+    
+    .container-vacina table tr td.icone {
+        display: none;
+    }
+    
+    .container-vacina table tr td .botao-vacinas {
+        width: 70px;
     }
     
 }
